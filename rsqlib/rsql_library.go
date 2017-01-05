@@ -1,3 +1,7 @@
+// Copyright 2017 Nicolas RIESCH
+// Use of this source code is governed by the license found in the LICENCE file.
+
+
 package rsqlib
 
 import (

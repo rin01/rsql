@@ -1,3 +1,7 @@
+// Copyright 2017 Nicolas RIESCH
+// Use of this source code is governed by the license found in the LICENCE file.
+
+
 /*package drv implements a driver to connect to a RSQL database server.
 
 The main types are Connection and Batch.
