@@ -9,9 +9,6 @@ The main types are Connection and Batch.
 The SQLtext and SQLpart types are provided for convenience, to easily create SQL script with parameters.
 But you can also create a complete SQL script yourself and pass it directly to the Query or Execute methods.
 
-    IMPORTANT: RSQL server aggressively close connections that are idle after 30 seconds.
-               So, if you don't use a connection for a while, you must close it. You will create a new connection when needed.
-
 RSQL implements T-SQL, the SQL dialect of MS SQL Server. It is a powerful extension to the plain SQL language and you can declare variables, use IF and WHILE statements, etc.
 
 When you send a SQL batch to RSQL, it should contain all the statements needed to accomplish the intended task. If these statements modify the data, they will often be enclosed by BEGIN TRAN and COMMIT statements to ensure that if an error occurs, nothing will be updated in the database. For example:
